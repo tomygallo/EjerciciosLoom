@@ -16,6 +16,7 @@ public class Circulo {
 		this.p1 = p;
 	}
 
+	
 	public boolean intersectaCon(Circulo c) {
 
 		return (this.radio + c.radio) >= p1.distanciaEntreDosPuntos(this.p1, c.p1);
