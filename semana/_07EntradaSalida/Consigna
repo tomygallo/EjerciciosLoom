@@ -1,0 +1,17 @@
+Consigna
+1. Escribir un archivo de entre 10 mil y 20 mil números enteros aleatorios, en el rango de 0 a 12000. (La cantidad de números debe ser aleatoria)
+2. Leer dicho archivo, buscando (a) máximo, (b) mínimo, (c) promedio.
+3. Escribir un segundo archivo con una tabla de resultados. Ejemplo:
+
++----------+-------+
+| Máximo   | 11978 |
++----------+-------+
+| Mínimo   |     3 |
++----------+-------+
+| Promedio |  7201 |
++----------+-------+
+
+
+¡El formato de la última salida es parte del desafío!
+
+Nota: Sólamente deberás subir el código fuente, con el formato adecuado, en este espacio.
