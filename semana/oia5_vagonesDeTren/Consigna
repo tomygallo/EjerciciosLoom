@@ -1,0 +1,41 @@
+www.oia.unsam.edu.ar/_media/prob/c3a05n2p3.pdf
+
+Descripción del problema
+Un zoológico debe contratar un tren (con costo por cada vagón que se utiliza) para transportar un conjunto de animales. El problema es que los animales de distintas especies no se llevan siempre bien. Para lidiar con el problema, el zoo tiene una tabla de "nivel de agresividad" de especies con la que determina que especies conviven adecuadamente.
+El objetivo es, dada una cierta cantidad de animales a trasladar, determinar la mínima cantidad de vagones necesarios para un traslado en que la agresividad total (suma de las agresividades en cada vagón) no supere un límite dado.
+Se pide escribir un programa que dada una tabla de especies con su nivel de agresividad y una lista de especies y cantidad de animales de dicha especie a trasladar, calcule el número mínimo de vagones necesarios para un traslado seguro.
+
+Aclaraciones
+
+    Las especies se identifican por su nombre, una secuencia de 2 a 20 letras (a-z) o guiones.
+    El nivel de agresividad es un número entero a, 0 <= a <= 30 000.
+    La agresividad en un vagón se calcula como la diferencia entre la agresividad de la especie menos agresiva y la de la más agresiva que se encuentran en dicho vagón.
+    La cantidad máxima de animales a transportar de cualquier especie no supera 25 000.
+    Los vagones no tienen un límite de animales que pueden transportar.  
+
+
+ Datos de entrada
+Se recibe un archivo vagones.in con el siguiente formato:
+
+    Primera línea: la cantidad de especies e conocidas, e < 10 000 y la agresividad máxima m permisible para el tren; separados por un blanco.
+    A continuación, e líneas conteniendo el nombre de una especie seguida de su nivel de agresividad, y la cantidad de animales de dicha especie a transportar, separados por un blanco. 
+
+
+Datos de salida
+Se debe generar un archivo vagones.out conteniendo la cantidad mínima de vagones necesarios y la agresividad total conseguible para un traslado seguro.
+
+Ejemplo
+La entrada vagones.in sería:
+
+6 100
+elefante 200 1
+leon 1500 2
+liebre 20 1
+mono 5 10
+pantera 2000 2
+zorro 50 10
+
+
+La salida vagones.out debería ser: 
+
+4 45

@@ -1,0 +1,30 @@
+Reglas
+Las razas entregadas deben estar completas. Sólo se permitirá una raza incompleta (la última en la que hayan trabajado).
+Cada raza debe poder atacar, descansar y recibirAtaque. Cualquiera de estas acciones será considerada como un turno.
+Solamente habrá puntaje si se evidencia el correcto funcionamiento de la funcionalidad mediante suficientes pruebas unitarias.
+
+Puntuación
+Se otorgarán:
+
+    +3 XP por habilidad (atacar, descansar, recibirAtaque) probada.
+    +3 XP extra por raza completa.
+    +8 XP por las cuatro razas completas.
+    Se restarán todos los puntos si se detecta código igual o estructuralmente equivalente entre grupos (a.k.a. copiado)
+
+
+Tips
+
+    Utilizar herencia y polimorfismo ayuda, pero no hasta descubrir un patrón de comportamiento.
+    Para probar más fácilmente, quizás conviene utilizar una raza adicional, “sabor a vainilla”. Es decir, que al atacar siempre lo hace con el mismo valor, y al recibir ataque siempre impacta directamente.
+    No hay un orden específico para las razas, y todas puntúan igual: elijan sabiamente por dónde empezar.
+
+
+Razas
+
+Un Wrives tiene una salud inicial de 108. Utiliza magia, y su rango de ataque es de 14 a 28 metros. Ocasiona un daño básico de 113 puntos. Cuando ataca, lo hace con 2 veces su daño, cada 2 ataques. Al recibir un ataque recibe 2 veces el daño, ya que no lleva armadura. Cuando descansa, medita, y como considera la violencia como algo malo, se rehúsa a atacar hasta que lo ataquen. Gracias a esto, aumenta su salud y su salud máxima en 50.
+
+Una Reralopes tiene una salud inicial de 53. Utiliza una catapulta, y su rango de ataque es de 5 a 46 metros. Ocasiona un daño básico de 27 puntos. Cuando ataca, erra 2 de cada 4 ataques. Al recibir un ataque se desconcentra y sus ataques vuelven al valor normal inicial. Cuando descansa, se concentra y sus próximos 3 ataques dañan el doble del valor correspondiente.
+
+Una Radaiteran tiene una salud inicial de 176. Utiliza shurikens, y su rango de ataque es de 17 a 41 metros. Ocasiona un daño básico de 56 puntos. Cuando ataca, lo hace cada vez con más fuerza (3 de daño extra x la cantidad de ataques dados). Al recibir un ataque lo hace normalmente. Cuando descansa, no le sucede nada.
+
+Un Nortaichian tiene una salud inicial de 166. Utiliza un arco, y su rango de ataque es de 16 a 22 metros. Ocasiona un daño básico de 18 puntos. Cuando ataca, se cura un 4 por ciento de su salud. Al recibir un ataque se enfurece y sus ataques multiplican por 2 su daño (dura 2 turnos). Cuando descansa, recupera toda su salud, pero se vuelve de piedra por 2 turnos, lo que hace que no pueda atacar, pero reduce el daño entrante en 1/2.

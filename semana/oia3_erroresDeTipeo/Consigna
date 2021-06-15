@@ -1,0 +1,23 @@
+Descripción del problema
+Un importante periódico ha decidido agregar un suplemento dedicado a la medicina del deporte en su edición dominical. Dado el vocabulario algo específico que se maneja, el jefe de redacción necesita contratar nuevos dactilógrafos.
+Para juzgar la calidad de los postulantes que se han presentado, les pide copiar un texto extenso sobre el tema, sabiendo que éste mide a lo más 1.000.000 caracteres.
+Luego de revisar los textos mecanografiados, el jefe ha concluido que, de haber errores, estos se reducen a un desorden de las letras. De esta manera, conociendo cuántas permutaciones entre letras vecinas hacen falta para dejarlo en orden, es capaz de establecer un orden entre los candidatos para elegir criteriosamente el mejor.
+Para ayudar al jefe de redacción en la evaluación de los textos, se te pide que escribas un método:
+int procesador(String texto, String prueba) cuyos parámetros proveen:
+
+    texto: el texto correcto
+    prueba: el texto mecanografiado por un postulante (que es una permutación de los mismos caracteres).
+
+Determine la menor cantidad de movimientos de letras que debe realizar el editor para poder corregirla. Dichos movimientos consisten en intercambiar dos letras consecutivas.
+Cada texto ha sido redactados usando caracteres ASCII del rango 32 a 126 inclusivos. (Se diferencian mayúsculas de minúsculas.).
+
+Ejemplo
+Si los datos fueran:
+
+texto: "Texto Estamos pintando!"
+prueba: "ostant!Em inpados"
+
+
+La respuesta deberá ser: 
+
+40
